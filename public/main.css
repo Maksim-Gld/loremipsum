@@ -791,6 +791,11 @@ select::picker(select) {
   margin: 1.4rem 0px 0px;
   width: 100%;
 }
+@media (max-width: 640px) {
+  .header_content .header_content-btn {
+    gap: 10px;
+  }
+}
 .header_content .header_content-btn .btn {
   flex-grow: 1;
   flex-basis: 0;
@@ -1060,20 +1065,6 @@ select::picker(select) {
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
 }
-@media (max-width: 1024px) {
-  .form_grid {
-    max-width: 640px;
-    margin: 0px auto;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: 1fr;
-  }
-}
-.form_grid-center30 {
-  text-align: center;
-}
-.form_grid-center30 .btn {
-  max-width: 370px;
-}
 @media (min-width: 1025px) {
   .form_grid-width30 {
     grid-column-start: 3;
@@ -1084,6 +1075,25 @@ select::picker(select) {
   .form_grid-center30 {
     grid-column: span 3/span 3;
   }
+}
+@media (max-width: 1024px) {
+  .form_grid {
+    max-width: 640px;
+    margin: 0px auto;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .form_grid {
+    gap: 10px;
+  }
+}
+.form_grid-center30 {
+  text-align: center;
+}
+.form_grid-center30 .btn {
+  max-width: 370px;
 }
 .form_grid select, .form_grid input[type=email], .form_grid input[type=text],
 .form_grid .btn {

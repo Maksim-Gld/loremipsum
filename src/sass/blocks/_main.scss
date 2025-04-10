@@ -130,23 +130,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 30px;
-
-        @media (max-width:1024px) {
-            max-width: 640px;
-            margin: 0px auto;
-            grid-template-rows: repeat(6, 1fr);
-            grid-template-columns: 1fr;
-           
-        }
-
-        &-center30 {
-            text-align: center;
-
-            & .btn {
-                max-width: 370px;
-            }
-        }
-
+        
         @media (min-width:1025px) {
             &-width30 {
                 grid-column-start: 3;
@@ -158,6 +142,26 @@
     
             &-center30 {
                 grid-column: span 3 / span 3;
+            }
+        }
+
+        @media (max-width:1024px) {
+            max-width: 640px;
+            margin: 0px auto;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: 1fr;
+           
+        }
+
+        @media (max-width:480px) {
+            gap: 10px;
+        }
+
+        &-center30 {
+            text-align: center;
+
+            & .btn {
+                max-width: 370px;
             }
         }
 

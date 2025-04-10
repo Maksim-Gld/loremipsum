@@ -9,7 +9,7 @@
     flex: 1 1 auto;
     color: var(--black);
     background-color: var(--white);
-    background-image: image-set("../../src/img/background/banner/header_banner_x1.jpg" 1x, "../../src/img/background/banner/header_banner_x2.jpg" 2x, "../../src/img/background/banner/header_banner_x3.jpg" 3x);
+    background-image: image-set("./../src/img/background/banner/header_banner_x1.jpg" 1x, "./../src/img/background/banner/header_banner_x2.jpg" 2x, "./../src/img/background/banner/header_banner_x3.jpg" 3x);
     background-position: center 0px;
     background-repeat: no-repeat;
     background-size: cover;

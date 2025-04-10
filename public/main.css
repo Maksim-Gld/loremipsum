@@ -37,48 +37,48 @@
 
 @font-face {
   font-family: "Lato-Bold";
-  src: url("../../src/fonts/Lato-Bold.eot");
-  src: url("../../src/fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/Lato-Bold.woff") format("woff"), url("../../src/fonts/Lato-Bold.ttf") format("truetype"), url("../../src/fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+  src: url("./../src/fonts/Lato-Bold.eot");
+  src: url("./../src/fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("./../src/fonts/Lato-Bold.woff") format("woff"), url("./../src/fonts/Lato-Bold.ttf") format("truetype"), url("./../src/fonts/Lato-Bold.svg#Lato-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato-ExtraBold";
-  src: url("../../src/fonts/Lato-ExtraBold.eot");
-  src: url("../../src/fonts/Lato-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/Lato-ExtraBold.woff") format("woff"), url("../../src/fonts/Lato-ExtraBold.ttf") format("truetype"), url("../../src/fonts/Lato-ExtraBold.svg#Lato-ExtraBold") format("svg");
+  src: url("./../src/fonts/Lato-ExtraBold.eot");
+  src: url("./../src/fonts/Lato-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./../src/fonts/Lato-ExtraBold.woff") format("woff"), url("./../src/fonts/Lato-ExtraBold.ttf") format("truetype"), url("./../src/fonts/Lato-ExtraBold.svg#Lato-ExtraBold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato-Light";
-  src: url("../../src/fonts/Lato-Light.eot");
-  src: url("../../src/fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/Lato-Light.woff") format("woff"), url("../../src/fonts/Lato-Light.ttf") format("truetype"), url("../../src/fonts/Lato-Light.svg#Lato-Light") format("svg");
+  src: url("./../src/fonts/Lato-Light.eot");
+  src: url("./../src/fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("./../src/fonts/Lato-Light.woff") format("woff"), url("./../src/fonts/Lato-Light.ttf") format("truetype"), url("./../src/fonts/Lato-Light.svg#Lato-Light") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato-Regular";
-  src: url("../../src/fonts/Lato-Regular.eot");
-  src: url("../../src/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/Lato-Regular.woff") format("woff"), url("../../src/fonts/Lato-Regular.ttf") format("truetype"), url("../../src/fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+  src: url("./../src/fonts/Lato-Regular.eot");
+  src: url("./../src/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("./../src/fonts/Lato-Regular.woff") format("woff"), url("./../src/fonts/Lato-Regular.ttf") format("truetype"), url("./../src/fonts/Lato-Regular.svg#Lato-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato-Medium";
-  src: url("../../src/fonts/Lato-Medium.eot");
-  src: url("../../src/fonts/Lato-Medium.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/Lato-Medium.woff") format("woff"), url("../../src/fonts/Lato-Medium.ttf") format("truetype"), url("../../src/fonts/Lato-Medium.svg#Lato-Medium") format("svg");
+  src: url("./../src/fonts/Lato-Medium.eot");
+  src: url("./../src/fonts/Lato-Medium.eot?#iefix") format("embedded-opentype"), url("./../src/fonts/Lato-Medium.woff") format("woff"), url("./../src/fonts/Lato-Medium.ttf") format("truetype"), url("./../src/fonts/Lato-Medium.svg#Lato-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato-SemiBold";
-  src: url("../../src/fonts/Lato-SemiBold.eot");
-  src: url("../../src/fonts/Lato-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/Lato-SemiBold.woff") format("woff"), url("../../src/fonts/Lato-SemiBold.ttf") format("truetype"), url("../../src/fonts/Lato-SemiBold.svg#Lato-SemiBold") format("svg");
+  src: url("./../src/fonts/Lato-SemiBold.eot");
+  src: url("./../src/fonts/Lato-SemiBold.eot?#iefix") format("embedded-opentype"), url("./../src/fonts/Lato-SemiBold.woff") format("woff"), url("./../src/fonts/Lato-SemiBold.ttf") format("truetype"), url("./../src/fonts/Lato-SemiBold.svg#Lato-SemiBold") format("svg");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -404,6 +404,7 @@ select::picker(select) {
   gap: 10px;
 }
 .field_file-label.btn-transparent, .field_file-label.btn {
+  font-family: "Lato-SemiBold", sans-serif;
   border: 2px solid var(--blue-light);
 }
 .field_file-icon {
@@ -742,7 +743,7 @@ select::picker(select) {
   flex: 1 1 auto;
   color: var(--black);
   background-color: var(--white);
-  background-image: image-set("../../src/img/background/banner/header_banner_x1.jpg" 1x, "../../src/img/background/banner/header_banner_x2.jpg" 2x, "../../src/img/background/banner/header_banner_x3.jpg" 3x);
+  background-image: image-set("./../src/img/background/banner/header_banner_x1.jpg" 1x, "./../src/img/background/banner/header_banner_x2.jpg" 2x, "./../src/img/background/banner/header_banner_x3.jpg" 3x);
   background-position: center 0px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -937,7 +938,7 @@ select::picker(select) {
 .main {
   color: var(--main-text);
   background-color: var(--main-bg);
-  background-image: image-set("../../src/img/background/main/bg_main_x1.jpg" 1x, "../../src/img/background/main/bg_main_x2.jpg" 2x, "../../src/img/background/main/bg_main_x3.jpg" 3x);
+  background-image: image-set("./../src/img/background/main/bg_main_x1.jpg" 1x, "./../src/img/background/main/bg_main_x2.jpg" 2x, "./../src/img/background/main/bg_main_x3.jpg" 3x);
   background-position: center 0px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1002,7 +1003,7 @@ select::picker(select) {
   max-width: 110px;
   left: calc(-25% - 10px);
   top: 30%;
-  background-image: url("../../src/img/icons/elipse.svg");
+  background-image: url("./../src/img/icons/elipse.svg");
   background-size: 20px 6px;
   background-position: 0px 0px;
   background-repeat: space no-repeat;

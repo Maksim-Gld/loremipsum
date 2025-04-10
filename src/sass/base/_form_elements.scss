@@ -167,6 +167,7 @@ select {
             gap: 10px;
 
             &.btn-transparent, &.btn {
+                font-family: 'Lato-SemiBold', sans-serif;;
                 border: 2px solid var(--blue-light);
             }
         }

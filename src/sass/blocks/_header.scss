@@ -1,0 +1,95 @@
+/*header*/
+@use "./../base/mixins" as mixins;
+
+.header {
+    @include mixins.animationAll;
+    
+    padding: 100px 0px 200px;
+    height: 850px;
+    flex: 1 1 auto;
+    color: var(--black);
+    background-color: var(--white);
+    background-image: image-set("../../src/img/background/banner/header_banner_x1.jpg" 1x, "../../src/img/background/banner/header_banner_x2.jpg" 2x, "../../src/img/background/banner/header_banner_x3.jpg" 3x);
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .container {
+        @include mixins.d-flex();
+
+        overflow: hidden;
+        height: 100%;
+    }
+  
+    &_content {
+        @include mixins.d-flex(space-between, start);
+
+        flex-flow: column;
+        margin: 100px 0px 0px;
+        max-width: 780px;
+        font-size: 1.25rem;
+
+        h1, .h1 {
+            line-height: 1.15;
+            margin: 0px 0px 1.25rem;
+            text-transform: uppercase;
+        }
+  
+        & &-info {
+            p { 
+            
+            }
+        }
+
+        & &-list {
+            margin: 0.2rem 0px 0px 0.9rem;
+
+            li {
+                list-style-type: "-";
+                padding: 0.3rem 0px 0px 0.5rem;
+
+                &:first-child {
+                    padding-top: 0px;
+                }
+            }
+            
+        }
+        
+        & &-btn {
+            @include mixins.d-flex(space-between, flex-start);
+
+            gap: 30px;
+            max-width: 396px;
+            margin: 1.4rem 0px 0px;
+            width: 100%;
+    
+            .btn {
+                flex-grow: 1;
+                flex-basis: 0;
+        
+                &:first-child {
+                    //margin-left: 0px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        height: auto;
+        background-position: 0px 0px;
+        padding: 75px 0px 100px;
+
+        &_content {
+            max-width: 640px;
+        }
+    }
+    
+    @media (max-width: 640px) {
+        padding: 50px 0px 50px;
+
+        &_content {
+            margin-top: 50px;
+        }
+    }
+}
+  

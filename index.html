@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project M</title>
+  <link rel="stylesheet" href="public/main.css">
+  <meta property="og:title" content="Project M">
+  <meta property="og:description" content="Project M">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+</head>
+
+<body>
+  <div class="App">
+    <nav class="nav">
+      <div class="container">
+        <div class="nav_logo">
+          <a href="#">
+            <img src="./src/img/logo.svg" alt='LoremIpsum.Net' />
+          </a>
+        </div>
+        <div class="nav_box">
+          <input id="menu_toggle" type="checkbox" />
+          <label class="menu_btn" for="menu_toggle">
+            <span></span>
+          </label>
+          <ul class="nav_list nav_list-mobile">
+            <li class="nav_list-item">
+              <span href="#">Бизнес</span>
+            </li>
+            <li class="nav_list-item">
+              <a href="#">О Нас</a>
+            </li>
+            <li class="nav_list-item">
+              <a href="#">Цены</a>
+            </li>
+            <li class="nav_list-item">
+              <a href="#anchor_order">Оформить заказ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <div class="header_content">
+          <h1>
+            <span class="text_light-blue">Loremipsum</span> dolor sit ametconsectetur
+            <span class="text_light-blue">adipiscing</span>
+          </h1>
+          <div class="header_content-info">
+            <p><strong>At vero eos et accusamus et iusto odio dignissimos ducimus!</strong></p>
+            <ul class="header_content-list">
+              <li>Totam rem aperiam eaque ipsa</li>
+              <li>Sit voluptatem accusantium doloremque laudantium</li>
+              <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+            </ul>
+          </div>
+          <div class="header_content-btn">
+            <a class="btn" href="#">заказать</a>
+            <a class="btn btn-transparent" href="#">подробнее</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div id="anchor_order" class="container">
+        <h2>Оформление <span class="text_light-blue">Заказа</span></h2>
+        <div class="main_subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+          <div class="stages">
+            <div class="stages_item">
+              <div class="circle-icon">
+                <svg>
+                  <use href="./src/img/icons/sprite_m.svg#search"></use>
+                </svg>
+              </div>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="stages_item">
+              <div class="circle-icon">
+                <svg>
+                  <use href="./src/img/icons/sprite_m.svg#percent"></use>
+                </svg>
+              </div>
+              <p>Сonsecteturadipiscing elit</p>
+            </div>
+            <div class="stages_item">
+              <div class="circle-icon">
+                <svg>
+                  <use href="./src/img/icons/sprite_m.svg#file"></use>
+                </svg>
+              </div>
+              <p>Sed do eiusmod tempor</p>
+            </div>
+            <div class="stages_item">
+              <div class="circle-icon">
+                <svg>
+                  <use href="./src/img/icons/sprite_m.svg#message"></use>
+                </svg>
+              </div>
+              <p>Esse cillum dolore eu fugiat</p>
+            </div>
+            <div class="stages_item">
+              <div class="circle-icon">
+                <svg>
+                  <use href="./src/img/icons/sprite_m.svg#money"></use>
+                </svg>
+              </div>
+              <p>Excepteur sint occaecat cupidatat non proident</p>
+            </div>
+          </div>
+        </div>
+        <div class="main_form">
+          <form id="form_main" action="" method="">
+            <div class="form_grid">
+              <div class="form_item-select field_select form_item-width33">
+                <div class="dropdown">
+                  <input id="dropdown_select" class="dropdown_input-hidden" type="checkbox" />
+                  <input id="dropdown_selected" name="selected-system" type="hidden" />
+                  <label for="dropdown_select" class="dropdown_label">
+                    <div class="dropdown_button custom_input">
+                      <div class="dropdown_button-text">Выберите тип системы</div>
+                      <div class="dropdown_button-ico">
+                        <svg>
+                          <use href="./src/img/icons/sprite_m.svg#arrow_select"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </label>
+                  <div id="js-dropdown_list" class="dropdown_list">
+                    <div class="dropdown_list-item" data-option="Sed ut perspiciatis">Sed ut perspiciatis</div>
+                    <div class="dropdown_list-item" data-option="Nemo enim ipsam">Nemo enim ipsam</div>
+                    <div class="dropdown_list-item" data-option="Et harum quidem">Et harum quidem</div>
+                    <div class="dropdown_list-item" data-option="Temporibus autem">Temporibus autem</div>
+                    <div class="dropdown_list-item" data-option="Itaque earum rerum">Itaque earum rerum</div>
+                    <div class="dropdown_list-item" data-option="Sed ut perspiciatis">Sed ut perspiciatis</div>
+                    <div class="dropdown_list-item" data-option="Nemo enim ipsam">Nemo enim ipsam</div>
+                    <div class="dropdown_list-item" data-option="Et harum quidem">Et harum quidem</div>
+                    <div class="dropdown_list-item" data-option="Temporibus autem">Temporibus autem</div>
+                    <div class="dropdown_list-item" data-option="Itaque earum rerum">Itaque earum rerum</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form_item-input">
+                <input id="femail" name="femail" type="email" placeholder="Ваш e-mail">
+              </div>
+              <div class="form_item-input">
+                <input id="fname" name="fname" type="text" placeholder="Ваше имя" />
+              </div>
+              <div class="form_item-range form_grid-width70">
+                <div class="range-info">
+                  <div class="range-text">Sed ut perspiciatis, unde omnis iste natus</div>
+                  <div class="range-value"><span class="range-output">0</span> %</div>
+                </div>
+                <input class="range range-input" type="range" min="0" max="100" step="1" value="0">
+              </div>
+              <div class="form_item-file field_file form_grid-width30">
+                <input id="ffile" name="upload_file" type="file" />
+                <label class="field_file-label btn-transparent" for="ffile">
+                  <span class="field_file-icon">
+                    <svg>
+                      <use href="./src/img/icons/sprite_m.svg#file_btn"></use>
+                    </svg>
+                  </span>
+                  <span class="field_file-label--text " data-text="Прикрепить файл">Прикрепить файл</span>
+                </label>
+              </div>
+              <div class="form_item-button form_grid-center30">
+                <button form="form_main" class="btn">Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_item">
+          <p>© 2018 «LoremIpsum.net» Все права защищены.</p>
+        </div>
+        <div class="footer_item footer_payments">
+          <div class="footer_info">
+            <div class="footer_icon">
+              <svg>
+                <use href="./src/img/icons/sprite.svg#qiwi"></use>
+              </svg>
+            </div>
+            <div>
+              Qiwi wallet
+            </div>
+          </div>
+          <div class="footer_info">
+            <div class="footer_icon">
+              <svg>
+                <use href="./src/img/icons/sprite.svg#yamoney"></use>
+              </svg>
+            </div>
+            <div>
+              Yandex Money
+            </div>
+          </div>
+          <div class="footer_info">
+            <div class="footer_icon">
+              <svg>
+                <use href="./src/img/icons/sprite.svg#wmoney"></use>
+              </svg>
+            </div>
+            <div>
+              Web Money
+            </div>
+          </div>
+        </div>
+        <div class="footer_item footer_contact">
+          <div class="footer_info">
+            <div class="footer_icon">
+              <svg>
+                <use href="./src/img/icons/sprite.svg#mail"></use>
+              </svg>
+            </div>
+            <div>
+              <a href="mailto:info@ipsum228.com" target="_blank">info@ipsum228.com</a>
+            </div>
+          </div>
+          <div class="footer_info">
+            <div class="footer_icon">
+              <svg>
+                <use href="./src/img/icons/sprite.svg#vk"></use>
+              </svg>
+            </div>
+            <div>
+              <a href="https://vk.com" target="_blank">Мы вконтакте</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./src/js/form_elements.js"></script>
+</body>
+
+</html>

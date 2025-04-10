@@ -1,0 +1,28 @@
+{
+  "name": "Project M",
+  "version": "0.1.0",
+  "source": "index.html",
+  "homepage": "https://Maksim-Gld.github.io/loremipsum",
+  "private": true,
+  "scripts": {
+    "start": "sass --style=expanded --watch src/sass:public",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "sass": "^1.86.3"
+  },
+  "author": "M Goldman"
+}

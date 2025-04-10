@@ -1,0 +1,41 @@
+:root {
+	/* Colors */
+	--blue-light: #3E9CDC;
+	--dark-blue: #286690;
+	--blue: #42A9ED;
+	--black: #000000;
+	--black-btntx: #2A2B30;
+	--black-nav: rgb(16, 16, 29,0.9);
+	--white: #fff;
+	--white70: rgb(255, 255, 255, 0.7);
+	--gray: #BBBBBB;
+	--dark-gray: #3D4050;
+	--light-gray: #6F6D7B;
+	--slight-gray: #C3C3C3;
+	--velvet-gray: #272733;
+
+  /* Btn */
+	--btn_white-bg: var(--white);
+	--btn_white-border: var(--light-gray);
+  	--btn_white-text: var(--black-btntx);
+	--btn_blue-bg: var(--blue-light);
+	--btn_blue-border: var(--white);
+	--btn_blue-text: var(--white);
+
+	/* Nav */
+	--nav-bg: var(--black-nav);
+	--nav-text: var(--white);
+	--nav-text-active: var(--blue-light);
+
+	/* Header */
+	--header-bg: var(--white);
+	--header-text: var(--white);
+
+	/* Main */
+	--main-bg: var(--velvet-gray);
+	--main-text: var(--white);
+
+	/* Footer */
+	--footer-bg: var(--dark-gray);
+	--footer-text: var(--white);
+}

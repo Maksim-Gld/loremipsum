@@ -1,0 +1,26 @@
+
+@mixin animationAll {
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
+  
+@mixin opacityOn($num) {
+    opacity: $num;
+}
+
+@mixin extraBold {
+    font-weight: 900;
+}
+
+@mixin semiBold {
+    font-weight: 700;
+}
+
+@mixin d-flex($justify: start, $align: stretch, $wrap:nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}

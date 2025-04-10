@@ -1,0 +1,201 @@
+@use "../base/mixins" as mixin;
+
+.main {
+    color: var(--main-text);
+    background-color: var(--main-bg);
+    background-image: image-set("../../src/img/background/main/bg_main_x1.jpg" 1x, "../../src/img/background/main/bg_main_x2.jpg" 2x, "../../src/img/background/main/bg_main_x3.jpg" 3x);
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px 150px;
+
+    h2, &_subtitle {
+        text-align: center;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        margin: 0px 0px 2rem;
+    }
+
+    &_subtitle {
+        color: var(--gray);
+    }
+
+    & .stages {
+        margin: 4.5rem 0px;
+
+        @media (max-width:1024px) {
+            margin: 2rem 0px 3.5rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        padding: 80px 0px 100px;
+    }
+
+    @media (max-width: 640px) {
+        padding: 50px 0px;
+    }
+}
+
+.stages {
+    @include mixin.d-flex(space-between);
+
+    flex: 0 0 auto;
+    width: 100%;
+    gap: 20px;
+
+    @media (max-width:1024px) {
+        flex-direction: column;
+        gap: 75px;
+    }
+
+    &_item {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        color: var(--white);
+        padding: 0px 0.65rem;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 6px;
+            width: 100%;
+            max-width: 110px;
+            left: calc(-25% - 10px);
+            top: 30%;
+            background-image: url("../../src/img/icons/elipse.svg");
+            background-size: 20px 6px;
+            background-position: 0px 0px;
+            background-repeat: space no-repeat;
+
+            @media (max-width:1024px) {
+                // transform: rotate(90deg);
+                // max-width: 60px;
+                // left: calc(41% - 3px);
+                // top: -40px;
+
+                width: 6px;
+                height: 100%;
+                left: calc(50% - 3px);
+                top: -52%;
+                background-size: 6px 20px;
+                background-repeat: no-repeat space;
+            }
+        }
+
+        &:first-child:before {
+            display: none;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        .circle-icon {
+            margin: 0px auto 1.25rem;
+
+            @media (max-width:1024px) {
+                margin-bottom: 0.75rem;
+            }
+        }
+    }
+}
+
+.circle-icon {
+    @include mixin.d-flex(center,center);
+
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 1;
+    background-color: var(--blue-light);
+    border: 5px solid var(--dark-blue);
+
+    svg {
+        max-width: 55px;
+        height: 55px;
+    }
+}
+
+.form {
+    &_grid {
+        display: grid;
+        align-items: start;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+
+        @media (max-width:1024px) {
+            max-width: 640px;
+            margin: 0px auto;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: 1fr;
+           
+        }
+
+        &-center30 {
+            text-align: center;
+
+            & .btn {
+                max-width: 370px;
+            }
+        }
+
+        @media (min-width:1025px) {
+            &-width30 {
+                grid-column-start: 3;
+            }
+    
+            &-width70 {
+                grid-column: span 2 / span 2;
+            }
+    
+            &-center30 {
+                grid-column: span 3 / span 3;
+            }
+        }
+
+        & select,
+        & input[type=email],
+        & input[type=text],
+        .btn {
+            width: 100%;
+        }
+
+        .btn {
+            font-size: 0.95rem;
+        }
+
+        .range {
+            &-info {
+                @include mixin.d-flex(space-between,flex-start);
+
+                margin: 0px 0px 0.5rem;
+            }
+
+            &-text {
+                font-size: 1.1rem;
+            }
+    
+            &-value {
+                flex-grow: 0;
+                white-space: nowrap;
+            }
+        }     
+    }
+
+                
+    @media (min-width: 1025px) {
+        &_item {
+            &-button {
+                padding-top: 20px;
+            }
+        }
+    }
+}

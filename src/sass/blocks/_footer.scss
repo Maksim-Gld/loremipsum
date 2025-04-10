@@ -1,0 +1,121 @@
+@use "../base/mixins" as mixin;
+
+.footer {
+    @include mixin.d-flex(space-between,stretch, nowrap);    
+
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    flex: 0 0 auto;
+    text-align: center; 
+    min-height: 80px;
+    font-size: 0.8rem;
+    padding: 1rem 0px;
+    box-sizing: border-box;
+
+    a {
+        color: var(--footer-text);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    & .container {
+        @include mixin.d-flex(space-between,center);
+
+        width: 100%;
+        gap: 10px;
+
+        @media (min-width: 1201px) {
+            gap: 38px;
+        }
+
+        @media (max-width:1024px) {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+
+    &_item {
+        @include mixin.d-flex(space-between);
+    }
+    
+    &_payments {
+        justify-content: space-evenly;
+        position: relative;
+        color: var(--slight-gray);
+        flex-grow: 0.9;
+
+        @media (max-width:1024px) {
+            gap: 20px
+        }
+
+        &:after, &:before {
+            content: "";
+            width: 1px;
+            height: 18px;
+            position: absolute;
+            top: 50%;
+            margin: -9px 0px 0px;
+            background: var(--slight-gray);
+
+            @media (max-width:1024px) {
+                display: none;
+            }
+        }
+
+        &:after {
+            right: 0px;
+        }
+        &:before {
+            left: 0px;
+        }
+    }
+
+    &_contact {
+        gap: 50px;
+
+        & .footer_info:not(:last-child) {
+            flex-grow: 1;
+
+            @media (max-width:1024px) {
+                flex-grow: inherit;
+            }
+        }
+
+        & .footer_icon svg {
+            max-height: 16px;
+        }
+
+        @media (max-width:1024px) {
+            width: 100%;
+            gap: 25px;
+            justify-content: center;
+        }
+    }
+
+    &_info {
+        @include mixin.d-flex(center, center);
+
+        line-height: 1;
+    }
+
+    &_icon {
+        margin: 0px 10px 0px 0px;
+        line-height: 0.5;
+
+        & svg {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            fill: var(--blue-light);
+            transition: fill 0.3s ease-in-out;
+
+            path {
+                fill: var(--blue-light);
+            }
+        }
+    }
+}

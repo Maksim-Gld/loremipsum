@@ -142,7 +142,9 @@
         padding: 0px;
         list-style: none;
         background-color: var(--black-nav); 
-        transition-duration: .25s;
+        -webkit-box-shadow: 0px 10px 24px 0px var(--nav-bg);
+        -moz-box-shadow: 0px 10px 24px 0px var(--nav-bg);
+        box-shadow: 0px 10px 24px 0px var(--nav-bg);
   
         & > li {
           border-top: 1px solid var(--yellow);
@@ -186,32 +188,7 @@
       display: block;
     }
   }
-
-  /*mobile button nav*/
-  #menu_toggle {
-    &:checked {
-      & ~ .menu__btn > span {
-        transform: rotate(45deg);
-
-        &::before {
-          top: 0;
-          transform: rotate(0);
-        }
-
-        &::after {
-          top: 0;
-          transform: rotate(90deg);
-        }
-      }
-
-      & ~ .nav-list {
-        z-index: 1;
-        visibility: visible;
-        transform: translateX(0);
-      }
-    }
-  }
-  
+ 
   .menu_btn {
     @include mixins.d-flex(start, center);
 

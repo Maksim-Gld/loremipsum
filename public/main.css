@@ -655,7 +655,9 @@ select::picker(select) {
     padding: 0px;
     list-style: none;
     background-color: var(--black-nav);
-    transition-duration: 0.25s;
+    -webkit-box-shadow: 0px 10px 24px 0px var(--nav-bg);
+    -moz-box-shadow: 0px 10px 24px 0px var(--nav-bg);
+    box-shadow: 0px 10px 24px 0px var(--nav-bg);
   }
   .nav_list-mobile > li {
     border-top: 1px solid var(--yellow);
@@ -684,23 +686,6 @@ select::picker(select) {
   }
   .menu_box {
     display: block;
-  }
-  /*mobile button nav*/
-  #menu_toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu_toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu_toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu_toggle:checked ~ .nav-list {
-    z-index: 1;
-    visibility: visible;
-    transform: translateX(0);
   }
   .menu_btn {
     display: flex;
